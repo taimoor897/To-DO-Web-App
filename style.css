@@ -1,0 +1,244 @@
+/* style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 320px;
+  transition: 0.3s;
+  
+}
+
+.form-box {
+  display: none;
+  flex-direction: column;
+  animation: fadeIn 0.4s ease;
+}
+
+.form-box:not(.hidden) {
+  display: flex;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+form input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+form input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  margin-top: 5px;
+}
+
+form button:hover {
+  background: #1a4dcc;
+}
+
+.switch-btn {
+  color: #2575fc;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Center text and placeholder inside input fields */
+
+
+/* Center the login button */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Optional: Set button to fixed width if it's too small */
+form button {
+  width: 100px;
+}
+/* container */
+.auth-container {
+  width: 320px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* both forms hidden by default then shown if no .hidden */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s;
+}
+.form-box.hidden {
+  display: none;
+}
+
+/* inputs & buttons centered */
+.form-box input,
+.form-box button {
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* switch link styling */
+.switch-text {
+  margin-top: 10px;
+}
+.switch-btn {
+  color: #2575fc;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* Make input field and button larger */
+
+#taskInput {
+  font-size: 1.2rem;
+  padding: 14px;
+  width: 90%;
+  border-radius: 8px;
+  height:8vh;
+}
+.todo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+    
+
+ 
+
+
+
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  
+}
+
+.logout-button:hover {
+  background-color: #e04444;
+  transform: scale(1.05);
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+}
+
+.task-text {
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
+.task-item.overdue {
+  border-left: 6px solid red;
+}
+.task-item.soon {
+  border-left: 6px solid orange;
+}
+.task-item.ok {
+  border-left: 6px solid green;
+}
+
+
+
+
+
+
+
+
+
+

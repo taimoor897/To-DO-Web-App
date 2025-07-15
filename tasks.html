@@ -1,0 +1,30 @@
+<!-- tasks.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <button id="logoutBtn" class="logout-button">Logout</button>
+
+
+  <div class="container">
+    <h2 class="todo" >To-Do List</h2>
+   <form id="addTaskForm">
+   <input type="text" id="taskInput" placeholder="Enter a new task" required />
+   <h3>Start date</h3>
+   <input type="date" id="startDateInput" required />
+   <h3>End date</h3>
+    <input type="date" id="endDateInput" required />
+    <button class="todo" type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="tasks.js"></script>
+</body>
+</html>
