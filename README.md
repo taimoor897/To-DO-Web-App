@@ -34,6 +34,35 @@ With this app, you can easily add, manage, and delete your daily tasks in one pl
    git clone https://github.com/taimoor897/todo-web-app.git
 
 
+   Open the project folder:
+
+cd todo-web-app
+
+
+Run the app:
+
+If it’s a static app → just open index.html in your browser
+
+If it has a backend → run:
+
+npm install
+npm start
+
+📌 Future Improvements
+
+🔍 Add search & filter options
+
+⏰ Due dates & reminders
+
+👥 User authentication
+
+🌙 Dark mode
+
+🤝 Contributing
+
+Pull requests are welcome! If you’d like to suggest major changes, please open an issue first to discuss what you’d like to change.
+
+
 
 
 
