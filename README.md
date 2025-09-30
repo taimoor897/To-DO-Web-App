@@ -31,7 +31,7 @@ With this app, you can easily add, manage, and delete your daily tasks in one pl
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/todo-web-app.git
+   git clone https://github.com/taimoor897/todo-web-app.git
 
 
 
@@ -39,6 +39,4 @@ With this app, you can easily add, manage, and delete your daily tasks in one pl
 
 
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/todo-web-app.git
+
